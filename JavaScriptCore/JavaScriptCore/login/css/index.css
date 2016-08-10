@@ -1,0 +1,127 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+body {
+    background: url("../images/bg.png");
+    text-align: center;
+    background-size: cover;
+}
+
+/*画板*/
+#panel {
+    background-color: white;
+    display: inline-block;
+    text-align: left;
+    margin-top: 100px;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: -10px 20px 100px black;
+}
+
+/*画板头部*/
+.panel-header h2 {
+    /*下划线*/
+    border-bottom: 1px solid #dddddd;
+    padding-bottom: 12px;
+
+    font-size: 22px;
+    font-weight: normal;
+    text-align: center;
+
+    margin-bottom: 20px;
+}
+
+/*面板中间*/
+.panel-content {
+
+}
+
+.panel-content .user-pwd {
+    height: 40px;
+    margin-bottom: 15px;
+
+    /*relative 生成相对定位的元素,相对于其正常位置进行定位;*/
+    position: relative;
+}
+
+.panel-content .user-pwd img {
+    /*absolute 生成绝对定位的元素,相对于static定位以外的第一个父元素进行定位*/
+    position: absolute;
+    top: 7px;
+    left: 6px;
+}
+
+.panel-content .user-pwd input {
+    width: 100%;
+    height: 100%;
+
+    padding-left: 38px;
+
+    /*超出box裁剪*/
+    box-sizing: border-box;
+
+    border-radius: 5px;
+    border: 1px solid #dddddd;
+}
+
+.panel-content .user-pwd input:focus {
+    outline: none;
+    border: 1px solid orange;
+    box-shadow: 0 0 10px orange;
+}
+
+.setting a {
+    color: darkgray;
+    font-size: 13px;
+}
+
+.setting a.pull-right {
+    float: right;
+}
+
+.login-btn {
+    background-color: orangered;
+    width: 100%;
+    height: 38px;
+
+    margin: 15px 0px;
+    font-size: 20px;
+    color: white;
+    /*去掉按钮的阴影*/
+    border: none;
+    border-radius: 5px;
+}
+
+.login-btn:focus {
+    outline: none;
+}
+
+.reg {
+    text-align: center;
+    color: darkgray;
+    font-size: 13px;
+    margin-bottom: 15px;
+}
+
+.reg a {
+    color: red;
+}
+
+/*尾部*/
+.panel-footer {
+    height: 44px;
+    line-height: 44px;
+}
+
+.panel-footer img {
+    width: 30px;
+    /*图片居中*/
+    vertical-align: middle;
+}

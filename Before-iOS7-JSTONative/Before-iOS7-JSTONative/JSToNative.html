@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JSToNative</title>
+</head>
+<body>
+    <button onclick="openCamera();">访问相册</button>
+
+    <script type="text/javascript">
+        // 访问native的相册
+        function openCamera() {
+            window.location.href = "native://openCamera";
+        }
+    </script>
+</body>
+</html>

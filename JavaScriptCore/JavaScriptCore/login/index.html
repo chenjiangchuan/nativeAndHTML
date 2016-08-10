@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>登录界面</title>
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+    <div id="panel">
+        <!--面板头部-->
+        <div class="panel-header">
+            <h2>欢迎登录SeeMyGo教育系统</h2>
+        </div>
+
+        <!--面板中间-->
+        <div class="panel-content">
+            <!--输入用户名-->
+            <div class="user-pwd">
+                <img src="images/icon_people.png">
+                <input placeholder="请输入用户名/手机号">
+            </div>
+            <!--输入密码-->
+            <div class="user-pwd">
+                <img src="images/icon_password.png">
+                <input placeholder="请输入密码" type="password">
+            </div>
+
+            <!--偏好设置-->
+            <div class="setting">
+                <!--勾选自动登录-->
+                <a href="#">
+                    <input type="checkbox" onclick="log('下次自动登录');">
+                    下次自动登录
+                </a>
+                <!--忘记密码-->
+                <a href="#" class="pull-right"  onclick="native.functionNameForJS('忘记密码');">
+                    忘记密码?
+                </a>
+            </div>
+
+            <!--登录-->
+            <button class="login-btn">
+                登&nbsp;录
+            </button>
+
+            <!--注册-->
+            <div class="reg">
+                还没帐号?&nbsp;&nbsp;<a href="#" onclick="native.pushToNextViewControllerWithTitle('立即注册');">立即注册</a>
+            </div>
+        </div>
+
+        <!--面板尾部-->
+        <div class="panel-footer">
+            <span>社交帐号登录:   </span>
+            <img src="images/sina.png">
+            <img src="images/weixin.png">
+            <img src="images/qq.png">
+        </div>
+    </div>
+</body>
+</html>
